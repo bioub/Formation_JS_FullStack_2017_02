@@ -7,6 +7,7 @@
 
 
 (function () {
+
     var sum = function (a, b) {
         return a + b;
     };
@@ -63,11 +64,11 @@
         // on a accès à la variable prénom qui est dans la
         // portée du dessus
         console.log('Bonjour ' + prenom);
-    }
+    };
 
     hello();
 
-// closure (portée)
+    // closure (portée)
     var logClosure = function(msg) {
         return function() {
             console.log(msg);

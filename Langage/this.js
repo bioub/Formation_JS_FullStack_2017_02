@@ -6,3 +6,9 @@ hello.call(console, 'Romain');
 hello.apply(console, ['Romain']);
 var helloConsole = hello.bind(console);
 helloConsole('Romain');
+
+/*
+window.alert();
+alert();
+this.alert();
+*/
