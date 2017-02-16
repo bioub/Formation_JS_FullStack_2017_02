@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+    <script src="node_modules/angular/angular.js"></script>
+</head>
+<body>
+<!--
+function html() {
+    var prenoms = ['Romain', 'Jean'];
+
+    function p1() {
+        var $index = 0;
+        var prenom = 'Romain';
+    }
+
+    function p1() {
+        var $index = 1;
+        var prenom = 'Eric';
+    }
+}
+5 - Scope, dans un template les variables ont une portée délimité
+par une balise (avec un directive qui créé un scope : ng-app, ng-repeat),
+côté model c'est un objet
+-->
+<div>
+    Prénoms : <input ng-model="prenoms" ng-list>
+</div>
+
+<p ng-repeat="prenom in prenoms track by $index">
+    Bonjour <span ng-bind="prenom"></span> !!!
+    <button ng-if="$last">-</button>
+</p>
+
+</body>
+</html>

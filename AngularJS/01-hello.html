@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+    <script src="node_modules/angular/angular.js"></script>
+</head>
+<body>
+<!--
+1 - Compilation, les balises sont parsées (via le DOM)
+2 - Directives, attributs ou des noms de balises qui appelle
+une fonction JS au moment de la compilation (ici ng-*)
+3 - Data Binding, le fait de lier le model et la vue
+ng-bind : si le model évolue la vue évolue
+ng-model : dans les 2 sens (model <-> vue)
+4 - Template, le HTML qui contient les directives
+-->
+    <div>
+        Prénom : <input ng-model="prenom">
+    </div>
+    <p>Bonjour <span ng-bind="prenom"></span> !!! </p>
+</body>
+</html>

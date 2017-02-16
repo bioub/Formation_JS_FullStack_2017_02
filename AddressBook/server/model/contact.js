@@ -1,11 +1,8 @@
-const contacts = [{
-    prenom: 'Jean',
-    nom: 'Dupont',
-    id: 1
-},{
-    prenom: 'Eric',
-    nom: 'Martin',
-    id: 2
-}];
+const mongoose = require('mongoose');
 
-module.exports = contacts;
+let Contact = mongoose.model('contacts', {
+    prenom: String,
+    nom: String
+});
+
+module.exports = Contact;
