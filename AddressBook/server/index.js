@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const mongoose = require('mongoose');
 const contact = require('./route/contact');
@@ -7,6 +8,7 @@ mongoose.Promise = Promise;
 
 const app = express();
 
+app.use(express.static(path.resolve(__dirname + '/../client')));
 app.use('/api/contacts', contact);
 
 // 404

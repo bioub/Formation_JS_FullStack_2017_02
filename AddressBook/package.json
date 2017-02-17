@@ -20,7 +20,8 @@
       "baseURL": "client"
     },
     "dependencies": {
-      "moment": "npm:moment@^2.17.1"
+      "angular": "github:angular/bower-angular@^1.6.2",
+      "bootstrap": "github:twbs/bootstrap@^3.3.7"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
