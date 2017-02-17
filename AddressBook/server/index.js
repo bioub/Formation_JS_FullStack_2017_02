@@ -25,6 +25,12 @@ app.use('/api', function(err, req, res, next) {
     res.json(err);
 });
 
+// Pour que les URL angular servent l'application
+// ex: /add
+app.use(function(req, res, next) {
+    res.sendFile(path.resolve(__dirname + '/../client/index.html'));
+});
+
 app.listen(80, function() {
     console.log('Server listening');
 });

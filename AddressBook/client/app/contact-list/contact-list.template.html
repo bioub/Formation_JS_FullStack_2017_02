@@ -1,0 +1,12 @@
+<h2>Liste des contacts</h2>
+
+<table class="table" ng-cloak>
+    <tr ng-repeat="contact in $ctrl.contacts">
+        <td>{{contact.prenom}} {{contact.nom}}</td>
+        <td>
+            <a ui-sref="contact-show({id: contact._id})" class="btn btn-xs btn-primary">Afficher</a>
+            <a href="#" class="btn btn-xs btn-warning">Modifier</a>
+            <a href="#" class="btn btn-xs btn-danger">Supprimer</a>
+        </td>
+    </tr>
+</table>

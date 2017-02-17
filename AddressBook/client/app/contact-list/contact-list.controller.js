@@ -3,15 +3,17 @@ import angular from 'angular';
 let module = angular.module('contact-list.controller', []);
 
 class ContactListCtrl {
-    constructor($http, $scope) {
+    constructor($http) {
+        this.contacts = [];
+
         $http.get('/api/contacts')
             .then(res => {
-               $scope.contacts = res.data;
+               this.contacts = res.data;
             });
     }
 }
 
-ContactListCtrl.$inject = ['$http', '$scope'];
+ContactListCtrl.$inject = ['$http'];
 
 module.controller('ContactListCtrl', ContactListCtrl);
 

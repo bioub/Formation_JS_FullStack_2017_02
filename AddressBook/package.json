@@ -21,6 +21,7 @@
     },
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.6.2",
+      "angular-ui-router": "github:angular-ui/angular-ui-router-bower@^0.4.2",
       "bootstrap": "github:twbs/bootstrap@^3.3.7"
     },
     "devDependencies": {

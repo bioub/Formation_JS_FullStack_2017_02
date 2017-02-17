@@ -1,0 +1,37 @@
+<h2>Afficher un contact</h2>
+
+<div class="row">
+    <div class="col-sm-2">
+        <b>Prénom</b>
+    </div>
+    <div class="col-sm-10">
+        {{$ctrl.contact.prenom}}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-2">
+        <b>Nom</b>
+    </div>
+    <div class="col-sm-10">
+        {{$ctrl.contact.nom}}
+    </div>
+</div>
+
+<div class="row" ng-if="$ctrl.contact.email">
+    <div class="col-sm-2">
+        <b>Email</b>
+    </div>
+    <div class="col-sm-10">
+        {{$ctrl.contact.email}}
+    </div>
+</div>
+
+<div class="row" ng-if="$ctrl.contact.telephone">
+    <div class="col-sm-2">
+        <b>Téléphone</b>
+    </div>
+    <div class="col-sm-10">
+        {{$ctrl.contact.telephone}}
+    </div>
+</div>
